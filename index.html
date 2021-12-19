@@ -9,6 +9,11 @@
     <meta name="author" content="Julio Sánchez de las Heras Martín-Consuegra">
     <meta name="robots" content="all">
     <title>Julio Sanchez-Heras</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+ 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -104,6 +109,22 @@
             <div class="about-content">
                 <div class="column left" data-aos="flip-up" data-aos-duration="1000">
                     <img src="img/sobre-Mi.JPG" alt="">
+                    <div class="wrapper">
+                        <div class="icon facebook">
+                            <div class="tooltip">Linkedin</div>
+                            <span><a class="linkedinIcon"
+                                    href="https://www.linkedin.com/in/julio-s%C3%A1nchez-de-las-heras-837733224/"><i
+                                        class="fab fa-linkedin-in"></i></a></span>
+                        </div>
+                        <div class="icon twitter">
+                            <div class="tooltip">Email</div>
+                            <span><a class="emailIcon" href="mailto:julish14@outlook.com"><i class="fas fa-envelope"></i></a></span>
+                        </div>
+                        <div class="icon github">
+                            <div class="tooltip">Github</div>
+                            <span><a class="githubIcon" href="https://github.com/JulioSanchez19"><i class="fab fa-github"></i></a></span>
+                        </div>
+                    </div>
                 </div>
                 <div class="column right" data-aos="fade-right" data-aos-duration="1000">
                     <div class="text">Soy Julio Sánchez Heras y soy <span class="typing-2"></span></div>
@@ -115,6 +136,7 @@
                     <br>
                     <p>Me adapto con facilidad a los cambios y no tengo problema trabajando con equipos de múltiples
                         personas.</p>
+                        
                     <div class="contenedor-grid">
                         <div class="grid-item"><img src="img/proactivo.png"><span>Proactivo</span></div>
                         <div class="grid-item"><img src="img/autodidacta.png"><span>Autodidacta</span></div>
@@ -167,7 +189,7 @@
         <h2 class="title">Formación complementaria</h2>
         <div class="serv-content" id="formacion-complementaria">
 
-            <div class="card">
+            <div class="card" id="card-form-comp" >
 
                 <div class="box">
                     <i class="fas fa-code"></i>
@@ -194,7 +216,7 @@
         <div class="max-width">
             <h2 class="title">Conocimientos técnicos</h2>
             <div class="skills-content">
-                <div class="grid-item-lenguajes">
+                <div class="grid-item-lenguajes" data-aos="zoom-in" data-aos-duration="1000">
                     <h3>Lenguajes de programación</h3>
                     <div class="grid-lenguajes">
                         <div class="item">
@@ -235,7 +257,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-item-lenguajes">
+                <div class="grid-item-lenguajes" data-aos="zoom-in" data-aos-duration="1000">
                     <h3>Desarrollo web</h3>
                     <div class="grid-lenguajes">
                         <div class="item">
@@ -270,7 +292,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-item-lenguajes">
+                <div class="grid-item-lenguajes" data-aos="zoom-in" data-aos-duration="1000">
                     <h3>Bases de datos</h3>
                     <div class="grid-lenguajes">
                         <div class="item">
@@ -299,7 +321,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-item-lenguajes">
+                <div class="grid-item-lenguajes" data-aos="zoom-in" data-aos-duration="1000">
                     <h3>Frameworks</h3>
                     <div class="grid-lenguajes">
                         <div class="item">
@@ -328,7 +350,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-item-lenguajes">
+                <div class="grid-item-lenguajes" data-aos="zoom-in" data-aos-duration="1000">
                     <h3>Otros</h3>
                     <div class="grid-lenguajes">
                         <div class="item">
@@ -482,8 +504,8 @@
     <section class="contact" id="contact">
         <div class="max-width">
             <h2 class="title">Contacto</h2>
-            <div class="contact-content">
-                <div class="column left">
+            <div class="contact-content" >
+                <div class="column left" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -503,7 +525,7 @@
                             <i class="fas fa-mobile-alt"></i>
                             <div class="info">
                                 <div class="head">Teléfono</div>
-                                <div class="sub-title">+34 626 317 117</div>
+                                <div class="sub-title"><a id="telefono" href="tel:626-317-117">+34 626 317 117</a></div>
                             </div>
                         </div>
                         <div class="row">
@@ -513,11 +535,11 @@
                                 <div class="sub-title">juliosh14@outlook.com</div>
                             </div>
                         </div>
-                        <a href="resources/CV_Julio_SanchezDeLasHeras_Martin-Consuegra.pdf"
+                        <a id="cv" href="resources/CV_Julio_SanchezDeLasHeras_Martin-Consuegra.pdf"
                             download="CV_Julio_SanchezDeLasHeras_Martin-Consuegra.pdf">Descargar CV</a>
                     </div>
                 </div>
-                <div class="column right">
+                <div class="column right" data-aos="zoom-in" data-aos-duration="1000">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24781.051287971943!2d-3.629216644063089!3d39.069313240830276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd69651a9d4f31d5%3A0xc65186c88e710f9b!2s13250%20Daimiel%2C%20Cdad.%20Real!5e0!3m2!1ses!2ses!4v1638376675295!5m2!1ses!2ses"
                         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -560,7 +582,7 @@
             </div>
             <div class="icon github">
                 <div class="tooltip">Github</div>
-                <span><a class="githubIcon" href="mailto:julish14@outlook.com"><i class="fab fa-github"></i></a></span>
+                <span><a class="githubIcon" href="https://github.com/JulioSanchez19"><i class="fab fa-github"></i></a></span>
             </div>
         </div>
         <p>Julio Sánchez de las Heras Martín-Consuegra © Copyright 2021</p>
