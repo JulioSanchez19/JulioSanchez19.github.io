@@ -43,12 +43,14 @@ $(document).ready(function(){
         loop: true
     });
     // owl carousel script
-    $('.carousel').owlCarousel({
+    $('.owl-carousel').owlCarousel({
         margin: 20,
         loop: true,
         autoplay: true,
         autoplayTimeOut: 2000,
         autoplayHoverPause: true,
+        nav: true,
+        dotsEach:true,
         responsive: {
             0:{
                 items: 1,

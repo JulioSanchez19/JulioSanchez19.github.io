@@ -297,7 +297,11 @@ section .title::after{
 .about .about-content .right p{
     text-align: justify;
 }
-.about .about-content .right a{
+
+.about .about-content .right a {
+    color: var(--colorSecundario);
+}
+/*.about .about-content .right a{
     display: inline-block;
     background: var(--colorPrincipal);
     color: #fff;
@@ -308,7 +312,7 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid var(--colorPrincipal);
     transition: all 0.3s ease;
-}
+}*/
 .about .about-content .right a:hover{
     color: var(--colorPrincipal);
     background: none;
@@ -332,6 +336,11 @@ section .title::after{
 }
 
 .about .about-content .right .contenedor-grid .grid-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
    text-align: center;
    background: var(--colorPrincipal);
     color: #fff;
@@ -343,8 +352,12 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid var(--colorPrincipal);
     transition: all 0.3s ease;
-
 }
+
+.about .about-content .right .contenedor-grid .grid-item img{
+    height: 30px;
+}
+
 /* services section styling */
 .services, .teams{
     color:#fff;
@@ -374,7 +387,7 @@ section .title::after{
 
 .services .serv-content .card{
     width: calc(50% - 20px);
-    background: #222;
+    background: #362db3;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -387,14 +400,18 @@ section .title::after{
     text-decoration: underline;
 }
 
+.services .serv-content .card a:hover {
+    color: var(--colorSecundario);
+}
+
 .services hr {
     width: 50%;
     margin: 5% auto;
 }
 
-.services .serv-content .card:hover{
+/*.services .serv-content .card:hover{
     background: var(--colorPrincipal);
-}
+}*/
 .services .serv-content .card .box{
     transition: all 0.3s ease;
 }
@@ -403,11 +420,11 @@ section .title::after{
     transform: scale(1.05);
 }
 
-.services .serv-content .card:hover .circlePrimero{
+.services .serv-content .card .circlePrimero{
     background: #222;
 }
 
-.services .serv-content .card:hover .circle{
+.services .serv-content .card .circle{
     background: #222;
 }
 
@@ -427,30 +444,75 @@ section .title::after{
 /* skills section styling */
 .skills .skills-content {
     display: flex;
+    /*flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;*/
 }
 
 .skills .skills-content .grid-item-lenguajes .grid-lenguajes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
-}
-.skills .skills-content .grid-item-lenguajes  .item{
-    display: table-cell;
-    justify-content: center;
-    width: 100px;
-    height: 130px;
+    margin-left: -10px; 
     border-radius: 15px;
     border: 2px solid #c3dff9;
-    margin: 10px;
-    text-align: center;
-    vertical-align: middle;
 }
 
-.skills .skills-content .grid-item-lenguajes img{
-    width: 70px;
+/*.skills .skills-content .grid-item-lenguajes .grid-lenguajes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}*/
+.skills .skills-content .grid-item-lenguajes .item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 80px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    vertical-align: bottom;
+}
+
+/*.skills .skills-content .grid-item-lenguajes .item .item-wrapper{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}*/
+
+/*.skills .skills-content .grid-item-lenguajes .item .contenido {
+    display: flex;
+}*/
+
+/*.skills .skills-content .grid-item-lenguajes .item .barra {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    display: block;
+    background-color: red;
+}
+
+.skills .skills-content .grid-item-lenguajes .item .barra span {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: gray;
+}*/
+.skills .skills-content .grid-item-lenguajes .item-wrapper .img-vertical {
+    width: auto;
+    height: 50px;
+}
+.skills .skills-content .grid-item-lenguajes .item-wrapper .img-horizontal {
+    width: 90px;
     height: auto;
 }
-.skills .skills-content .grid-item-lenguajes p{
+.skills .skills-content .grid-item-lenguajes .item-wrapper p{
     width: auto;
     margin: auto;
 }
@@ -537,6 +599,20 @@ section .title::after{
 .teams .carousel .card:hover{
     background: var(--colorPrincipal);
 }
+
+.teams .carousel .card:hover .box .text {
+    color: black;
+}
+
+.teams .carousel .card:hover .box p {
+    color: black;
+}
+
+.teams .carousel .card:hover .box .before-colon {
+    color: #0026ffd8;
+}
+
+
 .teams .carousel .card .box{
     display: flex;
     flex-direction: column;
@@ -750,6 +826,11 @@ footer span a:hover{
         width: 350px;
     }
 }
+@media (max-width: 1063px) {
+    .circle-comp:before{
+        visibility: hidden;
+    }
+}
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
@@ -789,6 +870,11 @@ footer span a:hover{
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
+    }
+}
+@media (max-width: 820px){
+    .skills .skills-content {
+        flex-direction: column;
     }
 }
 @media (max-width: 690px) {
@@ -836,6 +922,12 @@ footer span a:hover{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+}
+
+@media (max-width: 478px) {
+    .circle-comp:before{
+        visibility: hidden;
     }
 }
 
@@ -964,7 +1056,7 @@ footer span a:hover{
         border-radius: 0%;
         line-height: 40px; 
         text-align: center; 
-        background-color: var(--colorPrincipal); 
+        background-color: #222; 
         z-index: 2;
         display: inline-block;
       }
