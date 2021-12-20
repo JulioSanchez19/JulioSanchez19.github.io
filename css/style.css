@@ -288,9 +288,6 @@ section .title::after{
     border-radius: 6px;
 }
 
-.about .about-content .left .wrapper {
-
-}
 .about .about-content .right{
     width: 55%;
 }
@@ -395,7 +392,7 @@ section .title::after{
 
 .services .serv-content .card{
     width: calc(50% - 20px);
-    background: #362db3;
+    background: #69a5ff;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -409,7 +406,7 @@ section .title::after{
 }
 
 .services .serv-content .card a:hover {
-    color: var(--colorSecundario);
+    color: #0026ffd8;
 }
 
 .services hr {
