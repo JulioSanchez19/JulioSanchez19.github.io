@@ -649,6 +649,14 @@ section .title::after{
     transform: scale(1.1);
 }
 
+.teams .carousel .card .EnlacePortfolio {
+    text-decoration: underline;
+}
+
+.teams .carousel .card .EnlacePortfolio:hover {
+    color: var(--colorSecundario);
+}
+
 .before-colon {
     color: var(--colorPrincipal);
 }
